@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div id="upper-container">
     <img src="./assets/images/logo.svg" alt="page-logo">
-    <nav #top-navi>
-      <ul #navi-list>
+    <nav id="top-navi">
+      <ul id="navi-list">
         <li>Home</li>
         <li>New</li>
         <li>Popular</li>
@@ -32,8 +33,8 @@
     <div id="main-article-container">
       <img src="./assets/images/image-web-3-desktop.jpg" alt="Main article picture">
       <article id="main-article">
-        <header id="main-article-header">
-          <h1>
+        <header>
+          <h1 id="main-article-header">
             The Bright Future of Web 3.0?
           </h1>
         </header>
@@ -58,10 +59,10 @@
 
       <article class="new-articles">
          <header>
-            <div class="article-header">
+            <div class="article-header-on-dark">
               Hydrogen VS Electric Cars
             </div>
-            <p class="article-description">
+            <p class="article-description-on-dark">
               Will hydrogen-fueled cars ever catch up to EVs?
             </p>
             <hr/>
@@ -70,10 +71,10 @@
 
       <article class="new-articles">
          <header>
-            <div class="article-header">
+            <div class="article-header-on-dark">
               The Downsides of AI Artistry
             </div>
-            <p class="article-description">
+            <p class="article-description-on-dark">
               What are the possible adverse effects of on-demand AI image generation?
             </p>
             <hr/>
@@ -82,13 +83,12 @@
 
       <article class="new-articles">
          <header>
-            <div class="article-header">
+            <div class="article-header-on-dark">
               Is VC Funding Drying Up?
             </div>
-            <p class="article-description">
+            <p class="article-description-on-dark">
               Private funding by VC firms is down 50% YOY. We take a look at what that means.
             </p>
-            <hr/>
           </header>
       </article>
     </section> 
@@ -97,6 +97,7 @@
 
   <section id="top-articles-container">
     <div class="bottom-article">
+      <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
       <div class="top-order-number">
         01
       </div>
@@ -111,6 +112,7 @@
     </div>
 
     <div class="bottom-article">
+      <img src="./assets/images/image-top-laptops.jpg" alt="Top 10 laptops 2022">
       <div class="top-order-number">
         02
       </div>
@@ -125,6 +127,7 @@
     </div>
 
     <div class="bottom-article">
+      <img src="./assets/images/image-gaming-growth.jpg" alt="The growth of gaming">
       <div class="top-order-number">
         03
       </div>
@@ -147,5 +150,6 @@
     </div>
   </footer>
 
+  <script src="./script.js" charset="UTF-8"></script>
 </body>
 </html>
