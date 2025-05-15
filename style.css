@@ -4,9 +4,10 @@
 body{
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  margin: 0;
   border: 0;
   padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   font-size: 15px;
   background-color: hsl(36, 100%, 99%);
 }
@@ -14,8 +15,9 @@ body{
 #upper-container{
   display: flex;
   justify-content: space-between;
-  margin: 20px;
-  width: 90vw;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1440px;
 }
 
 #navi-list{
@@ -30,8 +32,8 @@ body{
 }
 
 #main-container{
-  margin: 20px;
-  width: 90vw;
+  margin: 20px auto;
+  width: 90%;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -54,30 +56,30 @@ body{
 }
 
 #main-article-header{
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 800;
   margin: 0;
+  margin-right: 20px;
 }
 
 #main-article-intro{
-  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .article-description{
   margin: 0;
   color: hsl(236, 13%, 42%);
-  font-size: 0.7rem;
-  letter-spacing: 0.2px;
-  line-height: 20px;
-}
-
-#main-article-intro > .article-description{
-  margin-bottom: 30px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 .read-more-btn{
   background-color: hsl(5, 85%, 63%);
   border: 0;
+  width: fit-content;
   padding: 15px 35px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -89,9 +91,9 @@ body{
   margin: 0;
   margin-bottom: 20px;
   color: hsl(233, 8%, 79%);
-  font-size: 0.7rem;
-  letter-spacing: 0.2px;
-  line-height: 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 .article-header-on-dark{
@@ -112,43 +114,44 @@ body{
 }
 
 .new-articles{
-  margin: 15px;
+  margin: 25px;
 }
 
 #bottom-articles-container{
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  margin: 20px;
-  width: 90vw;
+  margin: 60px auto 40px auto;
+  width: 90%;
 }
 
 .bottom-article{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
-  gap: 10px;
+  grid-template-rows: 1fr;
+  gap: 20px;
 }
 
 .bottom-article > img{
-  /* float: left;
-  width: 30%;
-  margin-right: 10px; */
-  grid-row: 1 / 3;
-  width: 100%;
+  width: 130px;
 }
 
-.bottom-article > .top-order-number{
-  font-size: 1.5rem;
+.top-order-number{
+  font-size: 3rem;
   font-weight: 800;
-  /* margin-bottom: 5px; */
   color: hsl(5, 85%, 63%);
 }
 
 .bottom-article .article-header{
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
   font-weight: 800;
+}
+
+.top3-article-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #navi-list > li:hover{
