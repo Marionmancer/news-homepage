@@ -34,7 +34,7 @@ Desktop display
 
 ### Links
 
-- Solution URL: [https://github.com/Marionmancer/intro-component-with-signup-form]
+- Solution URL: [https://github.com/Marionmancer/news-homepage.git]
 - Live Site URL: [https://marionmancer.github.io/news-homepage/]
 
 ## My process
