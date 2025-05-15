@@ -190,7 +190,16 @@ body{
   display: none;
 }
 
-@media (max-width: 375px){
+#main-container, #upper-container, #bottom-articles-container{
+  min-width: 1290px;
+}
+
+@media (max-width: 425px){
+  
+  #main-container, #upper-container, #bottom-articles-container{
+    min-width: 1px;
+  }
+
   #main-container{
     display: block;
   }

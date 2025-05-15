@@ -1,6 +1,6 @@
 window.addEventListener('resize', function(event){
   
-  if(event.target.outerWidth <= 375){
+  if(event.target.outerWidth <= 425){
     document.querySelector("#main-article-container > img").src = "./assets/images/image-web-3-mobile.jpg";
   } else{
     document.querySelector("#main-article-container > img").src = "./assets/images/image-web-3-desktop.jpg";;
