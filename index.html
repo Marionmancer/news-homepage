@@ -19,6 +19,7 @@
   <div id="upper-container">
     <img src="./assets/images/logo.svg" alt="page-logo">
     <nav id="top-navi">
+      <img src="./assets/images/icon-menu.svg" alt="Show menu" id="show-menu" onclick="openNav()">
       <ul id="navi-list">
         <li>Home</li>
         <li>New</li>
@@ -26,10 +27,23 @@
         <li>Trending</li>
         <li>Categories</li>
       </ul>
+      
+      
     </nav>
-    <img src="./assets/images/icon-menu.svg" alt="Show menu" id="show-menu">
   </div>
 
+  <div id="opacity-div"></div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./assets/images/icon-menu-close.svg"></a>
+    <ul class="vertical-menu-navi">
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+  </div>
+  
   <div id="main-container">
     <div id="main-article-container">
       <img src="./assets/images/image-web-3-desktop.jpg" alt="Main article picture">
